@@ -1,21 +1,17 @@
 <script>
 
-import HelloWorld from './components/HelloWorld.vue'
-export default{
-  components:{
-    HelloWorld
-  }
-}
-
 </script>
 
 <template>
-  <div>
-    Sono App
-  </div>
-  <HelloWorld/>
+  
+ <router-view>
+  
+</router-view>
+
 </template>
 
 <style lang="scss" scoped>
-
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 </style>
