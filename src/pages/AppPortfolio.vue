@@ -1,12 +1,13 @@
 <script>
 import Navbar from '../components/Navbar.vue';
-import ContainerAbout from '../container/ContainerAbout.vue';
+import ContainerPortfolio from '../container/ContainerPortfolio.vue';
 export default{
-    name:"AppAbout",
+    name:"AppPortfolio",
     components:{
         Navbar,
-        ContainerAbout
+        ContainerPortfolio
     }
+    
 }
 
 </script>
@@ -14,14 +15,18 @@ export default{
 
     <body>
         <header>
-            <Navbar :img='"src/assets/log/logo_bianco.png"'/>
+            <Navbar :img='"src/assets/log/logo_bianco.png"' />
         </header>
         <main>
-            <ContainerAbout />
+
+            <ContainerPortfolio/>
+
         </main>
+
     </body>
 
 </template>
+
 <style lang="scss" scoped>
 
 body{

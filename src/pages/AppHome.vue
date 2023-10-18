@@ -1,7 +1,7 @@
 <script>
 
 import Navbar from '../components/Navbar.vue';
-import ContainerMain from '../components/ContainerMain.vue';
+import ContainerMain from '../container/ContainerMain.vue';
 
 export default{
   name:'AppHome',

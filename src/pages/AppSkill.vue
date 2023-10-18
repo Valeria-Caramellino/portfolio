@@ -1,11 +1,11 @@
 <script>
 import Navbar from '../components/Navbar.vue';
-import ContainerAbout from '../container/ContainerAbout.vue';
+import ContainerSkill from '../container/ContainerSkill.vue';
 export default{
-    name:"AppAbout",
+    name:"AppSkill",
     components:{
         Navbar,
-        ContainerAbout
+        ContainerSkill
     }
 }
 
@@ -14,20 +14,23 @@ export default{
 
     <body>
         <header>
-            <Navbar :img='"src/assets/log/logo_bianco.png"'/>
+            <Navbar :img='"src/assets/log/logo_verde.png"' />
         </header>
         <main>
-            <ContainerAbout />
+            <ContainerSkill/>
         </main>
+
     </body>
 
 </template>
+
 <style lang="scss" scoped>
+@use'../style/variable.scss' as*;
 
 body{
   height: 100vh;
   width: 100vw;
-  background-image: url(../assets/img_bg/sfondo_nero.png);
+  background-image: url(../assets/img_bg/sfondo_bianco.png);
   background-size: 100% 120% ;
 }
 
