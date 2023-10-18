@@ -7,6 +7,8 @@ export default{
     },
     data(){
         return{
+            // è impostato con il nome della rotta di dove siamo
+            currentPage: this.$route.name, 
             navLink:[
                 {
                     label:"Home",
@@ -18,17 +20,27 @@ export default{
                 
                 },
                 {
-                    label:"Skills"
+                    label:"Skills",
+                    name:"skills"
                 },
                 {
-                    label:"Portfolio"
+                    label:"Portfolio",
+                    name:"portfolio"
                 },
                 {
-                    label:"Contatti"
+                    label:"Contatti",
+                    name: "contatti"
                 },
             ]
         }
-    }
+    },
+    methods: {
+        // funzione che mi serve per cambiare colore
+    setCurrentPage(pageName) {
+      this.currentPage = pageName;
+    },
+  },
+  
 }
 
 </script>
@@ -46,7 +58,8 @@ export default{
                     <div class="col-5 d-flex justify-content-around align-items-center">
                         
                         <template v-for="item in navLink">
-                            <router-link :to="{name:item.name}" >{{ item.label }}</router-link>
+                            <router-link :to="{name:item.name}"   :class="['nav-link', { 'selected': item.name === currentPage }]"
+                            @click="setCurrentPage(item.name)">{{ item.label }}</router-link>
                             
                         </template>
                         
@@ -76,6 +89,26 @@ nav{
             text-decoration: none;
             color: $bianco;
         }
+        .nav-link {
+        text-decoration: none;
+        padding: 10px 20px;
+        // border-radius: 10px;
+        transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-link.selected {
+        background-color: $bianco;
+        color: $verde;
+        font-weight: 600;
+        }
+
+        // .nav-link:not(.selected):hover {
+        // background-color: $bianco; // Sostituisci con il colore desiderato
+        // color: $verde; // Sostituisci con il colore desiderato
+        // }
+
     }
+
+
 }
 </style>
