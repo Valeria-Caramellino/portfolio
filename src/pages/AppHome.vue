@@ -39,6 +39,9 @@ body{
   width: 100vw;
   background-image: url(../assets/img_bg/sfondo_bianco.png);
   background-size: 100% 120% ;
-}
 
+  @media (max-width: 450px) { // Larghezza massima per dispositivi mobili
+      background-image: url(../assets/img_bg/sfondo_bianco_mobile.png);
+    }
+}
 </style>

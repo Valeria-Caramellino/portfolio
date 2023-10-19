@@ -10,11 +10,13 @@ export default {
 }
 
 </script>
+<!-- col-12 d-flex flex-column align-content-center col-lg-12 d-lg-flex justify-content-around align-items-center -->
+
 
 <template>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 d-flex justify-content-around align-items-center">
+            <div class="col-12 d-flex flex-column flex-md-row align-content-center col-md-12 justify-content-around align-items-center">
 
                 <SectionName :name="'Valeria'" :surname="'Caramellino'"
                     :text="'Front-end Developer / Back-end Developer'" />
@@ -34,6 +36,12 @@ export default {
 
     .col-12 {
         height: $h_100 ;
+    }
+    @media (max-width: 450px) {
+        background-image: url(../assets/img_bg/macchia.png);
+        background-repeat: no-repeat;
+        background-position: 45% 105% ;
+        background-size: 80%;
     }
 }
 </style>
