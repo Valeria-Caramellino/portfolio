@@ -1,13 +1,14 @@
 <script>
 
 import Navbar from '../components/Navbar.vue';
-import ContainerMain from '../container/ContainerMain.vue';
-
+import SectionName from '../components/SectionName.vue';
+import SectionImg from '../components/SectionImg.vue';
 export default{
   name:'AppHome',
   components:{
-     Navbar,
-     ContainerMain
+    Navbar,
+    SectionName,
+    SectionImg
   },
   data(){
     return{
@@ -19,12 +20,24 @@ export default{
 </script>
 
 <template>
-  <body>
+  <body >
     <header>
-      <Navbar :img='"src/assets/log/logo_verde.png"'/>
+      <Navbar/>
     </header>
-    <main>
-      <ContainerMain/>     
+    <main >
+      <div class="container-fluid">
+        
+        <div class="row justify-content-around  flex-wrap">
+<!-- align-items-strech -->
+          <SectionName :name="'Valeria'" :surname="'Caramellino'" :text="'Front-end Developer / Back-end Developer'"/>
+
+          <SectionImg :path='"src/assets/img_face/meee.png"' />
+
+        </div>
+      
+      </div> 
+      
+     
     </main>
   </body>
 
@@ -34,14 +47,17 @@ export default{
 <style lang="scss" scoped>
 
 @use'../style/variable.scss' as*;
-body{
-  height: 100vh;
-  width: 100vw;
-  background-image: url(../assets/img_bg/sfondo_bianco.png);
-  background-size: 100% 120% ;
 
-  @media (max-width: 450px) { // Larghezza massima per dispositivi mobili
-      background-image: url(../assets/img_bg/sfondo_bianco_mobile.png);
-    }
+
+
+body{
+  background-image: url(../assets/img_bg/sun.svg);
+  background-size: 130% 120% ;
+
+}
+@media (min-width: 1024px) {
+  .row{
+    height: $h_row;
+  }
 }
 </style>
