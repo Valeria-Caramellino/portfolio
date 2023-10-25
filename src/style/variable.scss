@@ -1,19 +1,23 @@
 //grandezze nav
-$h_nav: 4rem;
-$h_col_nav : 3rem;
-$h_img_nav: 2.5rem;
+$h_nav: 6rem;
+$h_col_nav : 4.5rem;
+$h_img_nav: 4.5rem;
 
+
+//height band title
+$band: 150px;
+$band_mobile : 70px;
 
 //grandezze container main
 
-$h_row: calc(100vh - 4rem);
+$h_row: calc( 100vh - $h_nav );
+
+$h_row_band: calc( 100vh - $h_nav - $band);
+$h_row_mobile: calc( 100% - $h_nav - $band_mobile );
 
 //height 100%
 
 $h_100: 100%;
-
-//height band title
-$band: 150px;
 
 
 //height col-12
