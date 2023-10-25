@@ -30,10 +30,8 @@ export default{
 <style lang="scss" scoped>
 @use'../style/variable.scss' as*;
 body{
-  height: 100vh;
-  width: 100vw;
-  background-image: url(../assets/img_bg/sfondo_bianco.png);
-  background-size: 100% 120% ;
+    background-image: url(../assets/img_bg/sun.svg);
+  background-size: 130% 120% ;
 }
 
 </style>
