@@ -69,12 +69,12 @@ export default {
 
 </script>
 <template>
-    <div class="col-5 d-flex flex-column align-items-center">
+    <div class="col-12 col-lg-5 d-flex flex-column align-items-center mb-2">
 
-        <h5 class="text-center col-10">{{ Title }}</h5>
+        <h5 class="text-center col-10 col-lg-11">{{ Title }}</h5>
 
-        <div class="col-10 d-flex justify-content-around align-items-center flex-wrap">
-            <div class="col-2 m-2" v-for="item in List">
+        <div class="col-10 d-flex justify-content-around align-items-center flex-wrap bg">
+            <div class="" v-for="item in List">
 
                 <img :src="item.img" alt="img">
             </div>
@@ -86,20 +86,42 @@ export default {
 </template>
 <style lang="scss" scoped>
 @use '../style/variable.scss' as*;
-
+.bg{
+    background-color: rgba($color: #000000, $alpha: 0.6);
+}
 h5 {
     // width: 500px;
-    padding: 1rem;
-    border: 0.5rem solid $verde;
-    color: $verde;
+    padding: 0.5rem;
+    border: 0.5rem solid $bianco;
+    border-radius: 20px;
+    color: $bianco;
     font-weight: 600;
 }
 
 img {
-    width: 5rem;
+    width: 3rem;
+    margin: 0.25rem;
 }
-.col-5{
-   
-    height: calc(100% - 50px);
+@media (min-width: 426px) {
+    img{
+        width: 4rem;
+        margin: 0.20rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .col-lg-5{
+        height: 346px;
+    }
+}
+
+@media(min-width: 1440px) {
+    img{
+        width: 5rem;
+        margin: 0.25rem;
+    }
+    h5{
+        font-size: 2rem;
+    }
 }
 </style>

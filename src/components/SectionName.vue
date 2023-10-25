@@ -11,7 +11,7 @@ export default {
 
 </script>
 <template>
-    <div class="col-12 col-lg-5 d-flex flex-column align-items-center justify-content-center">
+    <div class="col-12 col-lg-5 tracking-in-expand d-flex flex-column justify-content-center align-items-center">
         <h1>{{ name }}</h1>
         <h1>{{ surname }}</h1>
         <h4>{{ text }}</h4>
@@ -21,32 +21,48 @@ export default {
 <style lang="scss" scoped>
 @use'../style/variable.scss' as*;
 
-.col-lg-5 {
-    @media (max-width: 450px) {
-        max-width: 90vw;
-        max-height: 40vh;
-        h1{
-            font-size: 2rem;
-            font-weight: 600;
-        }
-        h4{
-            font-size: 1rem;
-            text-align: center;
-        }
-    }
-    max-width: 40vw;
-    max-height: 60vh;
-    
-    h1 {
-        color: $verde;
+.tracking-in-expand {
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+    h1{
+        color: $bianco;
         font-weight: bold;
-        line-height: 3rem;
+        margin-bottom: 2rem;
+        font-size: 4rem;
     }
     
     h4 {
+        text-decoration: underline 2px $bianco;
         text-align: center;
-        text-decoration: underline 2px $verde;
     }
-    
 }
+
+
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@media(max-width: 768px){
+  .tracking-in-expand{
+  margin: 2rem 0 2rem 0;
+
+    h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+  }
+}
+
+
 </style>

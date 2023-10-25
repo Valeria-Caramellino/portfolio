@@ -4,7 +4,6 @@ export default{
     name:"TitleBand",
     props:{
         text:String,
-        colore: String
     },
     
     
@@ -12,30 +11,45 @@ export default{
 
 </script>
 <template>
-    
-    <div class="col-12 d-flex justify-content-center align-items-center" :style="{ backgroundColor: colore }" >
-
-       <div class="col-6 d-flex justify-content-center align-items-center">
-
-        <h1>{{ text }}</h1>
-
-       </div>
-
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+            
+            <div class="col-11 col-lg-7 d-flex justify-content-center align-items-center">
+        
+                <h1>{{ text }}</h1>
+        
+            </div>
+        
+        </div>
     </div>
 
 
 </template>
 <style lang="scss" scoped>
  @use'../style/variable.scss' as*;
-.col-12{
+.row{
     height: $band ;
-    .col-6{
+    .col-lg-7{
         height: 100px;
-        border: 0.75rem solid $verde;
+        border-radius: 20px;
+        background-color: $bianco;
         // border-radius: 10px;
         h1{
             color: $verde;
+            
             font-weight: bold;
+        }
+    }
+
+    @media (max-width: 450px) {
+        height: $band_mobile;
+        .col-11.col-lg-7{
+            
+            height: 50px;
+
+            h1{
+                margin: 0.25px;
+            }
         }
     }
 }

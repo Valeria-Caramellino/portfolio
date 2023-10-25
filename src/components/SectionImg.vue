@@ -10,29 +10,58 @@ export default{
 </script>
 <template>
 
-    <div class=" col-11 col-lg-5">
+    <div class="col-12 col-lg-5 d-flex align-items-center justify-content-center scale-in-center">
         <img :src=" path " alt="foto">
     </div>
 
 </template>
 
 <style lang="scss" scoped>
-.col-lg-5{
-    max-width: 40vw;
-    max-height: 60vh;
-    img{
-        max-width: 70%;
-        max-height: 80%;
-    }
-    @media (max-width:450px) {
-        max-width: 50vw;
-        max-height: 60vh;
-        img{
-            
-            max-width: 100%;
-            max-height: 100%;
-        }
-    }
+.scale-in-center {
+  animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  25%{
+    transform: scale(0.25);
+    opacity: 1;
+  }
+  50%{
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  75%{
+    transform: scale(0.75);
+    opacity: 1;
+  }
+  90%{
+    transform: scale(0.90);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+img{
+  width: 400px;
+}
+
+@media(max-width: 768px){
+  .scale-in-center{
+    // animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+ 
+  margin: 2rem 0 2rem 0;
+  }
+}
+@media(max-width: 425px){
+  img{
+    width: 300px;
+  }
 }
 
 </style>
