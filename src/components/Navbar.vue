@@ -45,7 +45,7 @@ export default {
 
 <template>
     <div class="container-fluid ">
-        <div class="row">
+        <div class="row my_bg">
 
             <nav class="d-flex justify-content-around align-items-center col-12 position-relative">
                 
@@ -113,20 +113,20 @@ export default {
 <style lang="scss" scoped>
 @use'../style/variable.scss' as*;
 
+.my_bg{
+    background-color: $bg;
+}
 .collapse {
     margin-top: -0.55rem;
-    z-index: 1;
+    z-index: 4;
     position: absolute;
     top: 96px;
-
     .card {
         background-image: url(../assets/img_bg/sun.svg) !important;
-
         background-repeat: no-repeat;
         background-size: cover;
         border: 5px solid $bianco;
-        text-align: center;
-        // background-color: $verde !important;
+        text-align: center; 
     }
 
     ul {
@@ -187,7 +187,6 @@ nav {
         color: $verde;
         font-weight: 600;
         border-radius: 20px;
-        box-shadow: 3px 3px 3px 3px #dbdbdb;
     }
 
 }

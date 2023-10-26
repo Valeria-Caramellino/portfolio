@@ -16,9 +16,9 @@ export default{
 </script>
 <template>
 
-    <div class="col-5 text-center">
+    <div class="col-12 col-lg-5 tracking-in-expand d-flex flex-column justify-content-center align-items-center">
 
-        <h2>RECAPITI PERSONALI</h2>
+        <h3>Recapiti Personali</h3>
 
         <h4>E-mail</h4>
         <p>{{ email }}</p>
@@ -26,25 +26,53 @@ export default{
         <h4>Cell</h4>
         <p>{{ num_cell }}</p>
 
-        <h2>RECAPITI SOCIAL</h2>
-        <a :href="github" target="_blank" class="mx-1"><i class="fa-brands fa-github"></i></a>
-        <a class="mx-1" :href="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <h3>Recapiti Social</h3>
+        <div class="mb-2">
+
+            <a :href="github" target="_blank" class="mx-1"><i class="fa-brands fa-github"></i></a>
+            <a class="mx-1" :href="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
 
     </div>
 
 </template>
 <style lang="scss" scoped>
 @use'../style/variable.scss' as*;
-h2{
-    font-weight: 600;
+.tracking-in-expand {
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    background-color: $bg;
+    h3{
+        padding: 0.5rem;
+        border-bottom: 0.5rem solid $bianco;
+        border-radius: 20px;
+        color: $bianco;
+        font-weight: 600;
+    }
+    h4,p{
+        color: $bianco;
+    }
+    a{
+        color: $bianco;
+        
+        i{
+            font-size: 2rem;
+            background-color: $verde;
+            padding: 0.25rem;
+        }
+    }
 }
-a{
-    color: $bianco;
-    
-    i{
-        font-size: 2rem;
-        background-color: $verde;
-        padding: 0.25rem;
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 </style>

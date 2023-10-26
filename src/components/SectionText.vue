@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-    <div class="col-12 col-lg-5 text-focus-in d-flex flex-column justify-content-center align-items-center bg">  
+    <div class="col-12 col-lg-5 text-focus-in d-flex flex-column justify-content-center align-items-center">  
       <p>
         {{ text }}
       </p>
@@ -20,11 +20,9 @@ export default {
 
 <style lang="scss" scoped>
 @use'../style/variable.scss' as*;
-.bg{
-    background-color: rgba($color: #000000, $alpha: 0.6);
-}
 .text-focus-in {
 	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  background-color: $bg;
 }
 p{
     font-size: 18px;

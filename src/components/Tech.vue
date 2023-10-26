@@ -73,10 +73,10 @@ export default {
 
         <h5 class="text-center col-10 col-lg-11">{{ Title }}</h5>
 
-        <div class="col-10 d-flex justify-content-around align-items-center flex-wrap bg">
+        <div class="col-10 d-flex justify-content-around align-items-center flex-wrap">
             <div class="" v-for="item in List">
 
-                <img :src="item.img" alt="img">
+                <img :src="item.img" alt="img" class="scale-in-hor-left">
             </div>
 
         </div>
@@ -86,9 +86,25 @@ export default {
 </template>
 <style lang="scss" scoped>
 @use '../style/variable.scss' as*;
-.bg{
-    background-color: rgba($color: #000000, $alpha: 0.6);
+.col-10.d-flex{
+    background-color: $bg;
 }
+.scale-in-hor-left {
+	animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes scale-in-hor-left {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+}
+
 h5 {
     // width: 500px;
     padding: 0.5rem;

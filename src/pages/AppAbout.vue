@@ -15,7 +15,7 @@ export default{
     },
     data(){
         return{
-            text:" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, quod quidem accusamus adipisci consequatur error, magnam inventore fugiat eum voluptas quibusdam perferendis. Quia fugit odio quidem repellendus obcaecati iusto harum! adipisicing elit. Molestiae, quod quidem accusamus adipisci consequatur error, magnam inventore fugiat eum voluptas quibusdam perferendis. Quia fugit odio quidem repellendus obcaecati iusto harum!Molestiae, quod quidem accusamus adipisci consequatur error, magnam inventore fugiat eum voluptas quibusdam perferendis. Quia fugit odio quidem repellendus obcaecati iusto harum!",
+            text:"Ho trascorso molti anni lavorando nel settore della ristorazione, acquisendo abilità quali la capacità organizzative, contatto con i clienti, la pazienza, la gestione dello stress e la puntualità. Dopo diversi anni di esperienza e con una raggiunta stabilità, ho deciso di iniziare un nuovo percorso professionale e mi sono iscritta ad un corso intensivo di programmazione presso Boolean, acquisendo competenze pratiche e teoriche in vari linguaggi e framework. Durante il corso, ho sviluppato progetti ispirati a famose web app e ho lavorato sia in autonomia che in team. Ho anche consolidato soft skills che mi sono state di aiuto come precisione, capacità relazionali, problem-solving e serietà. Sono determinata, appassionata e pronta a mettere in pratica queste competenze."
         }
     }
 }
@@ -33,8 +33,8 @@ export default{
                 <TitleBand :text="'CHI SONO'"/>
 
                 <div class="row  justify-content-around  flex-wrap align-items-center">
-     <!-- align-items-strech -->
-                     <SectionImg :path='"src/assets/img_face/me_avatar_.png"'/>
+
+                     <SectionImg :path='"src/assets/img_face/bye.png"'/>
      
                      <SectionText  :text="text"  />
      
