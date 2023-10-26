@@ -18,7 +18,7 @@ $h_row_mobile: calc( 100% - $h_nav - $band_mobile );
 //height 100%
 
 $h_100: 100%;
-
+$vh_100: 100vh;
 
 //height col-12
 $col: calc(100% - 200px);
@@ -27,3 +27,6 @@ $col: calc(100% - 200px);
 $verde: #208380;
 $bianco : white;
 $nero: black;
+$bg: rgba($color: #000000, $alpha: 0.6);
+$scroll_sotto:#013641;
+$scroll_sopra: #4cdd86;
