@@ -45,7 +45,7 @@ export default{
 
         <h5 class="text-center col-10 col-lg-11">{{ Title }}</h5>
 
-        <div class="col-10 text-center my_bg">
+        <div class="col-10  my_bg">
 
             <ul>
                 <li v-for="item in List" class="scale-in-hor-left ">{{ item.text }}</li>
@@ -86,6 +86,7 @@ h5{
 }
 ul{
     padding-inline-start: 0px;
+    margin-left: 2rem;
     li{
         list-style-position: inside;
         color: $bianco;
