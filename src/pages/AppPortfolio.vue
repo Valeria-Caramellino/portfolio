@@ -1,6 +1,7 @@
 <script>
 import Navbar from '../components/Navbar.vue';
 import TitleBand from '../components/TitleBand.vue';
+import { store } from '../store';
 
 export default{
     name:"AppPortfolio",
@@ -11,30 +12,7 @@ export default{
     data() {
         return {
             index: 0,
-            group_projects: [
-                {
-                    // github: "https://github.com/Valeria-Caramellino",
-                    img: "src/assets/img_progetti/whats.png",
-                    // title: "Descrizione",
-                    // text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, quod quidem accusamus adipisci consequatur error, magnam inventore fugiat eum voluptas quibusdam perferendis. Quia fugit odio quidem repellendus obcaecati iusto harum!",
-                },
-                {
-                    // github: "https://github.com/Valeria-Caramellino/htmlcss-discord",
-                    img: "src/assets/img_progetti/Discord.png",
-                    // title: "Descrizione",
-                    // text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, quod quidem accusamus adipisci consequatur error, magnam inventore fugiat eum voluptas quibusdam perferendis. Quia fugit odio quidem repellendus obcaecati iusto harum  ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, quod quidem accusamus adipisci consequatur error, magnam inventore fugiat eum voluptas quibusdam perferendis. Quia fugit odio quidem repellendus obcaecati iusto harum!",
-                },
-                {   img: "src/assets/img_progetti/Discord.png" },
-                {   img: "src/assets/img_progetti/Discord.png" },
-                {   img: "src/assets/img_progetti/Discord.png" },
-                {   img: "src/assets/img_progetti/Discord.png" },
-                {   img: "src/assets/img_progetti/Discord.png" },
-                {   img: "src/assets/img_progetti/Discord.png" },
-                {   img: "src/assets/img_progetti/Discord.png" },
-                {   img: "src/assets/img_progetti/Discord.png" },
-                {   img: "src/assets/img_progetti/Discord.png" },
-                {   img: "src/assets/img_progetti/Discord.png" },
-            ]
+            store
         }
     },
     
@@ -54,9 +32,15 @@ export default{
 
                 <div class="row justify-content-around flex-wrap align-items-center mt-2">
 
-                    <div class="my_container" v-for="item in group_projects">
                         
-                        <img :src="item.img" alt="img_project" class="scale-in-hor-left">
+                    
+                    <div class="my_container" v-for=" (item, key) in store.group_projects">
+                        
+                        <router-link :to="'/Portfolio/' + (key+1)">
+                            
+                            <img :src="item.img" alt="img_project" class="scale-in-hor-left">
+    
+                        </router-link>
 
                     </div>
 
