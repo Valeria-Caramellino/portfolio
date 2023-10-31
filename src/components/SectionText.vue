@@ -12,7 +12,7 @@ export default {
 
 <template>
   <div class="col-12 col-lg-5 text-focus-in d-flex flex-column justify-content-center align-items-center">
-    <p>
+    <p class="p-2">
       {{ text }}
     </p>
   </div>
