@@ -25,7 +25,7 @@ export const store = reactive({
             github: "https://github.com/Valeria-Caramellino/laravel-dc-comics",
             img: "/src/assets/img_progetti/dc.png",
             title: "DC Comics",
-            text: "Progetto effettuato con Laravel, PHP è una riproduzione di DC-Comics, alla vista troviamo comics già caricati con possibilità di crearne altri, modificarli e cancellarli direttamente!",
+            text: "Progetto effettuato con Laravel, PHP. E' una riproduzione di DC-Comics. Alla vista troviamo comics già caricati con possibilità di crearne altri, modificarli e cancellarli direttamente!",
             tecnology:"Laravel, PHP, HTML, CSS, SASS, Bootstrap, Javascript.",
             video:"/src/assets/video/DC_Laravel.mp4"
         },
@@ -52,7 +52,7 @@ export const store = reactive({
             github: "https://github.com/Valeria-Caramellino/vite-boolflix",
             img: "/src/assets/img_progetti/Netflix.png",
             title: "Netflix",
-            text: "Progetto di riproduzione simil Netflix con chiamata Api tramite Ajax gestione della visione di stelle nei voti e bandierine per quanto riguarda la lingua",
+            text: "Progetto di riproduzione simil Netflix con chiamata Api tramite Ajax. Gestione dei voti espressi in stelle e della lingua del film sotto forma di bandierine.",
             tecnology:"HTML, CSS, SASS, Vuejs, Api, Javascript, Bootstrap, Ajax ",
             video:"/src/assets/video/Netflix.mp4"
         },
@@ -61,7 +61,7 @@ export const store = reactive({
             github: "https://github.com/Valeria-Caramellino/proj-html-vuejs",
             img: "/src/assets/img_progetti/Game.png",
             title: "GameHoax",
-            text: "Progetto di riproduzione pagina GameHoax",
+            text: "Progetto di riproduzione pagina GameHoax.",
             tecnology:"HTML, CSS, Bootstrap, VueJs, Javascript, FontAwesome",
             video:"/src/assets/video/Game.mp4"
         },
@@ -70,7 +70,7 @@ export const store = reactive({
             github: "https://github.com/Valeria-Caramellino/html-css-spotifyweb",
             img: "/src/assets/img_progetti/Spotify.png",
             title: "Spotify Web",
-            text: "Progetto riproduzione pagina statica della nota applicazione Spotify Web in modo responsive",
+            text: "Progetto riproduzione pagina statica della nota applicazione Spotify Web in modo responsive.",
             tecnology:"HTML, CSS, FontAwesome",
             video:"/src/assets/video/Spotify.mp4"
         },
@@ -79,16 +79,16 @@ export const store = reactive({
             github: "https://github.com/Valeria-Caramellino/js-social-posts",
             img: "/src/assets/img_progetti/Social_Post.png",
             title: "Social Post",
-            text: "Progetto riproduzione pagina statica di una pagina Social con Like",
+            text: "Progetto riproduzione pagina statica di una pagina Social con Like.",
             tecnology:"HTML, CSS, Javascript, FontAwesome",
             video:"/src/assets/video/Social_Post.mp4"
         },
         {
             id:10,
-            github: "https://github.com/Valeria-Caramellino/js-social-posts",
+            github: "https://github.com/Valeria-Caramellino/vite-yu-gi-oh",
             img: "/src/assets/img_progetti/Yu.png",
             title: "Yu-Gi-Oh",
-            text: "Progetto di riproduzione Carte Yu-Gi-Oh con chiamata Api tramite Ajax a gestione della ricerca per tipologia",
+            text: "Progetto di riproduzione Carte Yu-Gi-Oh con chiamata Api tramite Ajax e gestione della ricerca per tipologia.",
             tecnology:"HTML, CSS, Vuejs, Api, Javascript, Bootstrap, Ajax",
             video:"/src/assets/video/Yu-Gi-Oh.mp4"
         },
