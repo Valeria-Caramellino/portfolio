@@ -37,7 +37,6 @@ export default{
 body{
     background-image: url(../assets/img_bg/sun.svg);
     background-size: 130% 120% ;
-  
     .row{
         height: $h_row;
         

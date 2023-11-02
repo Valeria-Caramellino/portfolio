@@ -7,6 +7,7 @@ export default {
         return {
             // è impostato con il nome della rotta di dove siamo
             currentPage: this.$route.name,
+            isOffcanvasOpen: false,
             navLink: [
                 {
                     label: "Home",
@@ -33,9 +34,15 @@ export default {
         }
     },
     methods: {
-        // funzione che mi serve per cambiare colore
+        // funzione che mi serve per cambiare colore in base al nome 
         setCurrentPage(pageName) {
             this.currentPage = pageName;
+        },
+        toggleOffcanvas() {
+          this.isOffcanvasOpen = !this.isOffcanvasOpen;
+        },
+        closeOffcanvas() {
+          this.isOffcanvasOpen = false;
         },
     },
 
@@ -48,7 +55,7 @@ export default {
         <div class="row my_bg">
 
             <nav class="d-flex justify-content-around align-items-center col-12 position-relative">
-                
+
                 <!-- logo -->
                 <div class="col-5 d-flex justify-content-start align-items-center">
 
@@ -60,20 +67,20 @@ export default {
                 <!-- bottone collapse -->
                 <div class="col-5 d-lg-none d-flex justify-content-end align-items-center">
                     
-                    <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseRow" aria-expanded="false" aria-controls="collapseRow">
-
+                    <button class="btn btn-success" type="button" @click="toggleOffcanvas">
                         <i class="fa-solid fa-bars p-1"></i>
-
                     </button>
-
+            
                 </div>
 
                 <!-- link rotte -->
                 <div class="d-none col-lg-6 d-lg-flex justify-content-around align-items-center ">
 
                     <template v-for="item in navLink">
-                        
-                        <router-link :to="{ name: item.name }" :class="['nav-link', { 'selected': item.name === currentPage }]" @click="setCurrentPage(item.name)">
+
+                        <router-link :to="{ name: item.name }"
+                            :class="['nav-link', { 'selected': item.name === currentPage }]"
+                            @click="setCurrentPage(item.name)">
                             {{ item.label }}
                         </router-link>
 
@@ -82,67 +89,67 @@ export default {
                 </div>
 
             </nav>
-            
-            <div class="collapse" id="collapseRow">
-                <div class="row">
 
-                    <div class="card card-body">
-                        <ul>
-
-                            <template v-for="item in navLink">
-
-                                <li>
-                                    <router-link :to="{ name: item.name }">
-                                        {{ item.label }}
-                                    </router-link>
-
-                                </li>
-
-                            </template>
-
-                        </ul>
-                    </div>
-
+            <!-- offcanvas -->
+            <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" :class="{ 'show': isOffcanvasOpen }">
+                        
+                <div class="offcanvas-header d-flex justify-content-end">
+                    <button type="button" class="btn-close" @click="closeOffcanvas" aria-label="Close"></button>
+                </div>
+                        
+                <div class="offcanvas-body">
+                                    
+                    <ul>
+                        <template v-for="item in navLink">
+                            <li>
+                                <router-link :to="{ name: item.name }">
+                                    {{ item.label }}
+                                </router-link>
+                            </li>
+                        </template>
+                    </ul>
                 </div>
             </div>
-
 
         </div>
     </div>
 </template>
 <style lang="scss" scoped>
 @use'../style/variable.scss' as*;
+.offcanvas-custom {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    right: -100%;
+    height: 100%;
+    z-index: 1050;
+    transition: right 0.5s ease-in-out;
+   
+    /* Altre personalizzazioni qui */
+    background-image: url(../assets/img_bg/sun.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
-.my_bg{
-    background-color: $bg;
-}
-.collapse {
-    margin-top: -0.55rem;
-    z-index: 4;
-    position: absolute;
-    top: 96px;
-    .card {
-        background-image: url(../assets/img_bg/sun.svg) !important;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border: 5px solid $bianco;
-        text-align: center; 
-    }
+    li {
+        list-style: none;
 
-    ul {
-        text-align: center;
-        padding-left: 0;
-
-        li {
-            list-style: none;
-
-            a {
-                color: $bianco;
-                text-decoration: none;
-            }
+        a {
+            text-decoration: none;
+            color: $bianco;
+            font-size: larger;
+            font-weight: 600;
         }
     }
+
 }
+
+.offcanvas-custom.show {
+    right: 0;
+}
+.my_bg {
+    background-color: $bg;
+}
+
 
 nav {
     height: $h_nav;
@@ -190,4 +197,5 @@ nav {
     }
 
 }
+
 </style>
