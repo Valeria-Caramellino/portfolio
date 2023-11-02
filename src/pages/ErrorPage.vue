@@ -22,7 +22,7 @@ export default{
                     <div class="col-12 col-sm-5 tracking-in-expand">
                         <h1>OPS!?!?!</h1>
                         <h2>Errore nel caricamento della pagina</h2>
-                        <p>Error code: {{ $route.params.code }}</p>
+                        <!-- <p>Error code: {{ $route.params.code }}</p> -->
                     </div>
                 </div>
             </div>

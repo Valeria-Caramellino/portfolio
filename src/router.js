@@ -50,6 +50,11 @@ const router = createRouter({
             path:'/error/:code',
             name:'error',
             component: ErrorPage
+        },
+        {
+            // Questa è la route "catch-all" per gestire gli URL non validi
+            path: '/:catchAll(.*)',
+            redirect: '/error/404' // Reindirizza a ErrorPage con il codice di errore 404
         }
 
     ]
