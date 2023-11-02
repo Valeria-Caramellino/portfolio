@@ -35,7 +35,7 @@ export default{
                     
                     <Contact/>
 
-                    <SectionImg :path='"src/assets/img_face/meee.png"'/>
+                    <SectionImg :path='"../assets/img_face/meee.png"'/>
      
 
                 </div>

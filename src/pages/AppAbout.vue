@@ -34,7 +34,7 @@ export default{
 
                 <div class="row  justify-content-around  flex-wrap align-items-center">
 
-                     <SectionImg :path='"src/assets/img_face/bye.png"'/>
+                     <SectionImg :path='"../assets/img_face/bye.png"'/>
      
                      <SectionText  :text="text"  />
      

@@ -8,59 +8,59 @@ export default {
             List: [
                 {
 
-                    img: "src/assets/icon/html.svg",
+                    img: "../assets/icon/html.svg",
                 },
                 {
 
-                    img: "src/assets/icon/css.svg",
+                    img: "../assets/icon/css.svg",
                 },
                 {
 
-                    img: "src/assets/icon/javascript.svg",
+                    img: "../assets/icon/javascript.svg",
                 },
                 {
 
-                    img: "src/assets/icon/vue.svg",
+                    img: "../assets/icon/vue.svg",
                 },
                 {
 
-                    img: "src/assets/icon/vite.png",
+                    img: "../assets/icon/vite.png",
                 },
                 {
 
-                    img: "src/assets/icon/git.svg",
+                    img: "../assets/icon/git.svg",
                 },
                 {
 
-                    img: "src/assets/icon/vsc.svg",
+                    img: "../assets/icon/vsc.svg",
                 },
                 {
 
-                    img: "src/assets/icon/bootstrap.svg",
+                    img: "../assets/icon/bootstrap.svg",
                 },
                 {
 
-                    img: "src/assets/icon/postman.png",
+                    img: "../assets/icon/postman.png",
                 },
                 {
 
-                    img: "src/assets/icon/mamp.png",
+                    img: "../assets/icon/mamp.png",
                 },
                 {
 
-                    img: "src/assets/icon/npm.svg",
+                    img: "../assets/icon/npm.svg",
                 },
                 {
 
-                    img: "src/assets/icon/laravel.png",
+                    img: "../assets/icon/laravel.png",
                 },
                 {
 
-                    img: "src/assets/icon/sass.svg",
+                    img: "../assets/icon/sass.svg",
                 },
                 {
 
-                    img: "src/assets/icon/php.png",
+                    img: "../assets/icon/php.png",
                 },
             ]
         }

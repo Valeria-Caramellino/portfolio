@@ -51,7 +51,6 @@ export default {
                         <div class="col-12 col-lg-6 scale-in-center">
 
                             <video controls  :src="project.video"></video>
-                            <!-- <img :src="project.img" alt="img_project"> -->
 
                         </div>
 
