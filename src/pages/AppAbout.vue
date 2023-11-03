@@ -34,7 +34,7 @@ export default{
 
                 <div class="row  justify-content-around  flex-wrap align-items-center">
 
-                     <SectionImg :path='"/public/img_face/bye.png"'/>
+                     <SectionImg :path='"/img_face/bye.png"'/>
      
                      <SectionText  :text="text"  />
      
@@ -52,7 +52,7 @@ export default{
 
 
 body{
-    background-image: url(../public/img_bg/sun.svg);
+    background-image: url(../../public/img_bg/sun.svg);
     background-size: 130% 120% ;
     
     .row{

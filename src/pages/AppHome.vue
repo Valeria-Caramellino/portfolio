@@ -31,7 +31,7 @@ export default{
 <!-- align-items-strech -->
           <SectionName :name="'Valeria'" :surname="'Caramellino'" :text="'Front-end Developer / Back-end Developer'"/>
 
-          <SectionImg :path='"/public/img_face/meee.png"' />
+          <SectionImg :path='"/img_face/meee.png"' />
          
 
         </div>
