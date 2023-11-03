@@ -35,14 +35,14 @@ export default{
 <style lang="scss" scoped>
 @use'../style/variable.scss' as*;
 body{
-    background-image: url(../assets/img_bg/sun.svg);
+    background-image: url(../public/img_bg/sun.svg);
     background-size: 130% 120% ;
     .row{
         height: $h_row;
         
         .col-sm-3{
             height: 300px;
-            background-image: url(../assets/img_face/error_avatar.png);
+            background-image: url(../public/img_face/error_avatar.png);
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;

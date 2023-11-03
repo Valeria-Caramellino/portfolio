@@ -8,59 +8,59 @@ export default {
             List: [
                 {
 
-                    img: "../assets/icon/html.svg",
+                    img: "/public/icon/html.svg",
                 },
                 {
 
-                    img: "../assets/icon/css.svg",
+                    img: "/public/icon/css.svg",
                 },
                 {
 
-                    img: "../assets/icon/javascript.svg",
+                    img: "/public/icon/javascript.svg",
                 },
                 {
 
-                    img: "../assets/icon/vue.svg",
+                    img: "/public/icon/vue.svg",
                 },
                 {
 
-                    img: "../assets/icon/vite.png",
+                    img: "/public/icon/vite.png",
                 },
                 {
 
-                    img: "../assets/icon/git.svg",
+                    img: "/public/icon/git.svg",
                 },
                 {
 
-                    img: "../assets/icon/vsc.svg",
+                    img: "/public/icon/vsc.svg",
                 },
                 {
 
-                    img: "../assets/icon/bootstrap.svg",
+                    img: "/public/icon/bootstrap.svg",
                 },
                 {
 
-                    img: "../assets/icon/postman.png",
+                    img: "/public/icon/postman.png",
                 },
                 {
 
-                    img: "../assets/icon/mamp.png",
+                    img: "/public/icon/mamp.png",
                 },
                 {
 
-                    img: "../assets/icon/npm.svg",
+                    img: "/public/icon/npm.svg",
                 },
                 {
 
-                    img: "../assets/icon/laravel.png",
+                    img: "/public/icon/laravel.png",
                 },
                 {
 
-                    img: "../assets/icon/sass.svg",
+                    img: "/public/icon/sass.svg",
                 },
                 {
 
-                    img: "../assets/icon/php.png",
+                    img: "/public/icon/php.png",
                 },
             ]
         }

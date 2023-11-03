@@ -35,7 +35,7 @@ export default{
                     
                     <Contact/>
 
-                    <SectionImg :path='"../assets/img_face/meee.png"'/>
+                    <SectionImg :path='"../public/img_face/meee.png"'/>
      
 
                 </div>
@@ -49,7 +49,7 @@ export default{
 <style lang="scss" scoped>
 @use'../style/variable.scss' as*;
 body{
-    background-image: url(../assets/img_bg/sun.svg);
+    background-image: url(../public/img_bg/sun.svg);
     background-size: 130% 120% ;
   .row{
         height: $h_100;

@@ -43,7 +43,7 @@ export default {
                     <div class="row align-items-center justify-content-around">
                         <div class="d-none d-lg-block">
                             <router-link to="/Portfolio">
-                                <img src="../assets/icon/sinistra.png" alt="back">
+                                <img src="/public/icon/sinistra.png" alt="back">
                             </router-link>
                            
                         </div>
@@ -77,7 +77,7 @@ export default {
 @use'../style/variable.scss' as*;
 
 body {
-    background-image: url(../assets/img_bg/sun.svg);
+    background-image: url(../public/img_bg/sun.svg);
     background-size: 130% 120%;
     height: 100%;
     img{

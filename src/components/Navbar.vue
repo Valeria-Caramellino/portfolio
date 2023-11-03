@@ -59,7 +59,7 @@ export default {
                 <!-- logo -->
                 <div class="col-5 d-flex justify-content-start align-items-center">
 
-                    <img src="../assets/log/logo_bianco.png" alt="logo">
+                    <img src="/public/log/logo_bianco.png" alt="logo">
 
 
                 </div>
@@ -126,7 +126,7 @@ export default {
     transition: right 0.5s ease-in-out;
    
     /* Altre personalizzazioni qui */
-    background-image: url(../assets/img_bg/sun.svg);
+    background-image: url(../public/img_bg/sun.svg);
     background-repeat: no-repeat;
     background-size: cover;
 

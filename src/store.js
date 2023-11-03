@@ -5,92 +5,92 @@ export const store = reactive({
         {
             id:1,
             github: "https://github.com/Valeria-Caramellino/vue-boolzapp",
-            img: "../assets/img_progetti/whats.png",
+            img: "/public/img_progetti/whats.png",
             title: "Web App WhatsApp",
             text: "Progetto riproduzione Web App WhatsApp con risposta automatica dopo due secondi.",
             tecnology:"Html, Css, Javascript, Bootstrap, FontAwesome, VueJs",
-            video:"../assets/video/Boolzap.mp4"
+            video:"/public/video/Boolzap.mp4"
         },
         {
             id:2,
             github: "https://github.com/Valeria-Caramellino/htmlcss-discord",
-            img: "../assets/img_progetti/Discord.png",
+            img: "/public/img_progetti/Discord.png",
             title: "Discord",
             text: "Creazione di una pagina web ispirata al layout Discord.",
             tecnology:"HTML, CSS",
-            video:"../assets/video/Discord.mp4"
+            video:"/public/video/Discord.mp4"
         },
         {
             id:3,
             github: "https://github.com/Valeria-Caramellino/laravel-dc-comics",
-            img: "../assets/img_progetti/dc.png",
+            img: "/public/img_progetti/dc.png",
             title: "DC Comics",
             text: "Progetto effettuato con Laravel, PHP. E' una riproduzione di DC-Comics. Alla vista troviamo comics già caricati con possibilità di crearne altri, modificarli e cancellarli direttamente!",
             tecnology:"Laravel, PHP, HTML, CSS, SASS, Bootstrap, Javascript.",
-            video:"../assets/video/DC_Laravel.mp4"
+            video:"/public/video/DC_Laravel.mp4"
         },
         {
             id:4,
             github: "https://github.com/Valeria-Caramellino/html-css-bootstrap-dashboard",
-            img: "../assets/img_progetti/Dashboard.png",
+            img: "/public/img_progetti/Dashboard.png",
             title: "Dashboard",
             text: "Progetto di riproduzione di un Dashboard Responsive realizzato con Bootstrap.",
             tecnology:"HTML, CSS, Bootstrap ",
-            video:"../assets/video/Dashboard.mp4"
+            video:"/public/video/Dashboard.mp4"
         },
         {
             id:5,
             github: "https://github.com/Valeria-Caramellino/htmlcss-dropbox",
-            img: "../assets/img_progetti/DropBox-1.png",
+            img: "/public/img_progetti/DropBox-1.png",
             title: "DropBox",
             text: "Creazione di una pagina web ispirata al layout DropBox.",
             tecnology:"HTML, CSS",
-            video:"../assets/video/DropBox.mp4"
+            video:"/public/video/DropBox.mp4"
         },
         {
             id:6,
             github: "https://github.com/Valeria-Caramellino/vite-boolflix",
-            img: "../assets/img_progetti/Netflix.png",
+            img: "/public/img_progetti/Netflix.png",
             title: "Netflix",
             text: "Progetto di riproduzione simil Netflix con chiamata Api tramite Ajax. Gestione dei voti espressi in stelle e della lingua del film sotto forma di bandierine.",
             tecnology:"HTML, CSS, SASS, Vuejs, Api, Javascript, Bootstrap, Ajax ",
-            video:"../assets/video/Netflix.mp4"
+            video:"/public/video/Netflix.mp4"
         },
         {
             id:7,
             github: "https://github.com/Valeria-Caramellino/proj-html-vuejs",
-            img: "../assets/img_progetti/Game.png",
+            img: "/public/img_progetti/Game.png",
             title: "GameHoax",
             text: "Progetto di riproduzione pagina GameHoax.",
             tecnology:"HTML, CSS, Bootstrap, VueJs, Javascript, FontAwesome",
-            video:"../assets/video/Game.mp4"
+            video:"/public/video/Game.mp4"
         },
         {
             id:8,
             github: "https://github.com/Valeria-Caramellino/html-css-spotifyweb",
-            img: "../assets/img_progetti/Spotify.png",
+            img: "/public/img_progetti/Spotify.png",
             title: "Spotify Web",
             text: "Progetto riproduzione pagina statica della nota applicazione Spotify Web in modo responsive.",
             tecnology:"HTML, CSS, FontAwesome",
-            video:"../assets/video/Spotify.mp4"
+            video:"/public/video/Spotify.mp4"
         },
         {
             id:9,
             github: "https://github.com/Valeria-Caramellino/js-social-posts",
-            img: "../assets/img_progetti/Social_Post.png",
+            img: "/public/img_progetti/Social_Post.png",
             title: "Social Post",
             text: "Progetto riproduzione pagina statica di una pagina Social con Like.",
             tecnology:"HTML, CSS, Javascript, FontAwesome",
-            video:"../assets/video/Social_Post.mp4"
+            video:"/public/video/Social_Post.mp4"
         },
         {
             id:10,
             github: "https://github.com/Valeria-Caramellino/vite-yu-gi-oh",
-            img: "../assets/img_progetti/Yu.png",
+            img: "/public/img_progetti/Yu.png",
             title: "Yu-Gi-Oh",
             text: "Progetto di riproduzione Carte Yu-Gi-Oh con chiamata Api tramite Ajax e gestione della ricerca per tipologia.",
             tecnology:"HTML, CSS, Vuejs, Api, Javascript, Bootstrap, Ajax",
-            video:"../assets/video/Yu-Gi-Oh.mp4"
+            video:"/public/video/Yu-Gi-Oh.mp4"
         },
     ]
 })

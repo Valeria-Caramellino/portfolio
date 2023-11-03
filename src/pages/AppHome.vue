@@ -31,7 +31,7 @@ export default{
 <!-- align-items-strech -->
           <SectionName :name="'Valeria'" :surname="'Caramellino'" :text="'Front-end Developer / Back-end Developer'"/>
 
-          <SectionImg :path='"/assets/img_face/meee.png"' />
+          <SectionImg :path='"/public/img_face/meee.png"' />
          
 
         </div>
@@ -52,7 +52,7 @@ export default{
 
 
 body{
-  background-image: url(../assets/img_bg/sun.svg);
+  background-image: url(../../public/img_bg/sun.svg);
   background-size: 130% 120% ;
 
 }
