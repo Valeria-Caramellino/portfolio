@@ -8,59 +8,59 @@ export default {
             List: [
                 {
 
-                    img: "/public/icon/html.svg",
+                    img: "/icon/html.svg",
                 },
                 {
 
-                    img: "/public/icon/css.svg",
+                    img: "/icon/css.svg",
                 },
                 {
 
-                    img: "/public/icon/javascript.svg",
+                    img: "/icon/javascript.svg",
                 },
                 {
 
-                    img: "/public/icon/vue.svg",
+                    img: "/icon/vue.svg",
                 },
                 {
 
-                    img: "/public/icon/vite.png",
+                    img: "/icon/vite.png",
                 },
                 {
 
-                    img: "/public/icon/git.svg",
+                    img: "/icon/git.svg",
                 },
                 {
 
-                    img: "/public/icon/vsc.svg",
+                    img: "/icon/vsc.svg",
                 },
                 {
 
-                    img: "/public/icon/bootstrap.svg",
+                    img: "/icon/bootstrap.svg",
                 },
                 {
 
-                    img: "/public/icon/postman.png",
+                    img: "/icon/postman.png",
                 },
                 {
 
-                    img: "/public/icon/mamp.png",
+                    img: "/icon/mamp.png",
                 },
                 {
 
-                    img: "/public/icon/npm.svg",
+                    img: "/icon/npm.svg",
                 },
                 {
 
-                    img: "/public/icon/laravel.png",
+                    img: "/icon/laravel.png",
                 },
                 {
 
-                    img: "/public/icon/sass.svg",
+                    img: "/icon/sass.svg",
                 },
                 {
 
-                    img: "/public/icon/php.png",
+                    img: "/icon/php.png",
                 },
             ]
         }

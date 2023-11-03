@@ -46,7 +46,7 @@ export default{
 @use'../style/variable.scss' as*;
 
 body{
-    background-image: url(../public/img_bg/sun.svg);
+    background-image: url(../../public/img_bg/sun.svg);
     background-size: 130% 120% ;
     .row{
         height: $h_100;

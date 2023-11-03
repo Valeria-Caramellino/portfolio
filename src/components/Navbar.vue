@@ -126,7 +126,7 @@ export default {
     transition: right 0.5s ease-in-out;
    
     /* Altre personalizzazioni qui */
-    background-image: url(../public/img_bg/sun.svg);
+    background-image: url(../../public/img_bg/sun.svg);
     background-repeat: no-repeat;
     background-size: cover;
 
