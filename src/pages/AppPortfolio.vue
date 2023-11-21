@@ -60,7 +60,7 @@ export default{
 body{
     background-image: url(../../public/img_bg/sun.svg);
     background-size: 130% 120% ;
-    height: $vh_100;
+    min-height: $vh_100;
 
     .row{
         height: 350px;
@@ -91,7 +91,7 @@ body{
     }
     @media (max-width: 426px) {
         .row{
-            height: 400px;
+            height: 70vh;
         }
        .my_container{
            width: 90%;

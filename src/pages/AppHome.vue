@@ -54,7 +54,7 @@ export default{
 body{
   background-image: url(../../public/img_bg/sun.svg);
   background-size: 130% 120% ;
-
+  min-height: 100vh;
 }
 @media (min-width: 1024px) {
   .row{

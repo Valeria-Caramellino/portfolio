@@ -48,12 +48,13 @@ export default{
 body{
     background-image: url(../../public/img_bg/sun.svg);
     background-size: 130% 120% ;
+    min-height: 100vh;
     .row{
-        height: $h_100;
+        min-height: $h_100;
     }
     @media ( min-width:1024px ) {
     .row{
-        height: calc( $h_row_band - 0.50rem)  ;
+        min-height: calc( $h_row_band - 0.50rem)  ;
     }
     }
 }
