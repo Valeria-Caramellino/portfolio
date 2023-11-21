@@ -21,10 +21,11 @@ export default{
         <h3>Recapiti Personali</h3>
 
         <h4>E-mail</h4>
-        <p>{{ email }}</p>
+        
+        <p><a :href="'mailto:' + email">{{ email }}</a></p>
 
         <h4>Cell</h4>
-        <p>{{ num_cell }}</p>
+        <p> <a :href="'tel:+39' + num_cell">{{ num_cell }}</a></p>
 
         <h3>Recapiti Social</h3>
         <div class="mb-2">
@@ -53,6 +54,7 @@ export default{
     }
     a{
         color: $bianco;
+        text-decoration: none;
         
         i{
             font-size: 2rem;
