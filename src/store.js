@@ -92,6 +92,15 @@ export const store = reactive({
             tecnology:"HTML, CSS, Vuejs, Api, Javascript, Bootstrap, Ajax",
             video:"/video/Yu-Gi-Oh.mp4"
         },
+        {
+            id:11,
+            github: "https://github.com/Valeria-Caramellino/New_Adventure",
+            img: "/img_progetti/Adventures.png",
+            title: "Adventure",
+            text: "Progetto di gioco testuale che offre esperienze coinvolgenti grazie a OpenAI e VueJS. Combina l'intelligenza artificiale per la generazione di storie uniche e avvincenti con un'interfaccia utente reattiva e adattabile su tutti i dispositivi.",
+            tecnology:"Vuejs, Api, Javascript, Bootstrap, Ajax, Open AI",
+            video:"/video/Adventures.mp4"
+        },
     ]
 })
 // 
